@@ -8,7 +8,19 @@ Docker image for `apk-mitm`
 - Docker
 - Direnv
 
-# Get Started
+# Usage
+
+AMD image
+```bash
+docker run -id ghcr.io/atomicloud/mitm-apk/sulfone-boron-amd:latest
+```
+
+ARM image
+```bash
+docker run -id ghcr.io/atomicloud/mitm-apk/sulfone-boron-arm:latest
+```
+
+# Development
 
 To build and test the image, run
 
