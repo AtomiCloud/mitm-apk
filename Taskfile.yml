@@ -1,0 +1,11 @@
+version: "3"
+
+tasks:
+  build:
+    desc: Builds Docker image
+    cmds:
+      - docker build -t=kirinnee/apk-mitm:{{.CLI_ARGS}} .
+  run:
+    desc: Builds and runs the docker image
+    cmds:
+      - ./scripts/run.sh {{.CLI_ARGS}}
