@@ -34,14 +34,10 @@ jobs:
     strategy:
       matrix:
         configs:
-          - image-name: sulfone-boron-arm
+          - image-name: apk-mitm
             dockerfile: Dockerfile
             context: .
-            platform: linux/arm
-          - image-name: sulfone-boron-amd
-            dockerfile: Dockerfile
-            context: .
-            platform: linux/amd64
+            platform: linux/arm64,linux/amd64
     env:
       STRAT_DOCKER_IMAGE: ${{ matrix.configs.image-name }}
       STRAT_DOCKERFILE: ${{ matrix.configs.dockerfile }}
